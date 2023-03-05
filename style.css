@@ -1,0 +1,118 @@
+h3 {
+    max-width: 300px;
+}
+
+.two-col-table {
+    margin: auto;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    margin: 2rem 0;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.block2 {
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+}
+
+/* Выравнивание через flex */
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Выравнивание через flex и margin */
+.container-flex-margin {
+    display: flex;
+}
+
+.container-flex-margin>* {
+    margin: auto;
+}
+
+/* Выравнивание через grid */
+.container-grid {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Выравнивание через margin calc */
+.block-margin-calc {
+    /* отменяет схлопывание отступа наружу родителя */
+    display: inline-block;
+    margin-left: calc(50% - 25px);
+    margin-top: calc(50% - 25px);
+}
+
+/* Выравнивание через position absolute и transform */
+.container-relative {
+    position: relative;
+}
+
+.block-transform {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Выравнивание через display table */
+.container-table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-cell .block {
+    margin: auto;
+}
+
+.table-cell .block2 {
+    display: inline-block;
+}
+
+/* Выравнивание через display inline-block и псевдоэлемент */
+.container-with-pseudo-el {
+    text-align: center;
+    /* убирает промежуток между двумя инлайн элементами */
+    font-size: 0;
+}
+
+.container-with-pseudo-el::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.container-with-pseudo-el>* {
+    /* возвращаем нормальный размер шрифта */
+    font-size: initial;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Выравнивание через position absolute и отрицательные margin */
+.block-negative-margins {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}

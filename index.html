@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Выравнивание DIV по центру</title>
+</head>
+
+<body>
+    <table cellspacing="32" class="two-col-table">
+        <caption>
+            <h1>Выравнивание DIV</h1>
+        </caption>
+        <tr>
+            <!-- DIV известной ширины -->
+            <td valign="top">
+                <h2>DIV известной ширины</h2>
+
+                <!-- Выравнивание через flex -->
+                <h3>Выравнивание через flex</h3>
+                <div class="container container-flex">
+                    <div class="block"></div>
+                </div>
+
+                <!-- Выравнивание через flex и margin -->
+                <h3>Выравнивание через flex и margin</h3>
+                <div class="container container-flex-margin">
+                    <div class="block"></div>
+                </div>
+
+                <!-- Выравнивание через grid -->
+                <h3>Выравнивание через grid</h3>
+                <div class="container container-grid">
+                    <div class="block"></div>
+                </div>
+
+                <!-- Выравнивание через position absolute и transform -->
+                <h3>Выравнивание через position absolute и transform</h3>
+                <div class="container container-relative">
+                    <div class="block block-transform"></div>
+                </div>
+
+                <!-- Выравнивание через display table-cell -->
+                <h3>Выравнивание через table-cell</h3>
+                <div class="container container-table">
+                    <div class="table-cell">
+                        <div class="block"></div>
+                    </div>
+                </div>
+
+                <!-- Выравнивание через display inline-block и псевдоэлемент -->
+                <h3>Выравнивание через display inline-block и псевдоэлемент</h3>
+                <div class="container container-with-pseudo-el">
+                    <div class="block"></div>
+                </div>
+
+                <!-- Выравнивание через position absolute и отрицательные margin -->
+                <h3>Выравнивание через position absolute и отрицательные margin</h3>
+                <div class="container container-relative">
+                    <div class="block block-negative-margins"></div>
+                </div>
+
+                <!-- Выравнивание через margin calc -->
+                <h3>Выравнивание через margin calc</h3>
+                <div class="container container-relative">
+                    <div class="block block-margin-calc"></div>
+                </div>
+            </td>
+
+            <!-- DIV неизвестной ширины -->
+            <td valign="top">
+                <h2>DIV неизвестной ширины</h2>
+
+                <!-- Выравнивание через flex -->
+                <h3>Выравнивание через flex</h3>
+                <div class="container container-flex">
+                    <div class="block2">Hello</div>
+                </div>
+
+                <!-- Выравнивание через flex -->
+                <h3>Выравнивание через flex и margin</h3>
+                <div class="container container-flex-margin">
+                    <div class="block2">Hello</div>
+                </div>
+
+                <!-- Выравнивание через grid -->
+                <h3>Выравнивание через grid</h3>
+                <div class="container container-grid">
+                    <div class="block2">Hello</div>
+                </div>
+
+                <!-- Выравнивание через position absolute и transform -->
+                <h3>Выравнивание через position absolute и transform</h3>
+                <div class="container container-relative">
+                    <div class="block2 block-transform">Hello</div>
+                </div>
+
+                <!-- Выравнивание через display table-cell -->
+                <h3>Выравнивание через table-cell</h3>
+                <div class="container container-table">
+                    <div class="table-cell">
+                        <div class="block2">Hello</div>
+                    </div>
+                </div>
+
+                <!-- Выравнивание через display inline-block и псевдоэлемент -->
+                <h3>Выравнивание через display inline-block и псевдоэлемент</h3>
+                <div class="container container-with-pseudo-el">
+                    <div class="block2">Hello</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
