@@ -116,3 +116,21 @@ h3 {
     margin-left: -25px;
     margin-top: -25px;
 }
+
+/* Выравнивание через align-content */
+.container-align-content {
+    align-content: center;
+}
+
+.container-align-content-ib {
+    align-content: center;
+    text-align: center;
+}
+
+.block-align-content {
+    margin: auto;
+}
+
+.block-align-content-ib {
+    display: inline-block;
+}
